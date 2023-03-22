@@ -79,3 +79,7 @@ public:
     }
 };
 // Total TC:O(n) SC:*/
+
+/*
+vector::emplace_back()
+This function is used to insert a new element into the vector container, the new element is added to the end of the vector.*/
