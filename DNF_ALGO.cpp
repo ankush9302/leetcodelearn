@@ -1,3 +1,8 @@
+/*QUE LINK:https://leetcode.com/problems/sort-colors/description/
+RESOURCE TO LEARN: https://leetcode.com/problems/sort-colors/solutions/2358550/3-different-approaches-uber-sde-1-interview/
+                   https://www.geeksforgeeks.org/vectoremplace_back-c-stl/
+                   https://www.geeksforgeeks.org/sorting-algorithms/   */
+
 #include<bits/stdc++.h>
 using namespace std;
 class Solution {
@@ -79,3 +84,7 @@ public:
     }
 };
 // Total TC:O(n) SC:*/
+
+/*
+vector::emplace_back()
+This function is used to insert a new element into the vector container, the new element is added to the end of the vector.*/
