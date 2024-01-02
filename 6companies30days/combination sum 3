@@ -1,0 +1,28 @@
+class Solution {
+public:
+    void func(set<set<int>>&ans, set<int>&arr, int k, int n, int start) {
+        if (arr.size() == k && accumulate(arr.begin(), arr.end(), 0) == n) {
+            ans.insert(arr);
+            return;
+        }
+        
+        for (int i = start; i <= 9; ++i) {
+            arr.insert(i);
+            func(ans, arr, k, n, i + 1);
+            arr.erase(i);
+        }
+    }
+
+    vector<vector<int>> combinationSum3(int k, int n) {
+        set<set<int>> ans;
+        set<int> arr;
+        func(ans, arr, k, n, 1);
+
+        vector<vector<int>> finalans;
+        for (auto& s : ans) {
+            finalans.push_back(vector<int>(s.begin(), s.end()));
+        }
+        
+        return finalans;
+    }
+};
