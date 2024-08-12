@@ -1,0 +1,3 @@
+Tarjan algo to find strongly connnected component in directed graph
+Article: https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/ 
+Video: https://www.youtube.com/watch?v=trvJsdNCEVA
