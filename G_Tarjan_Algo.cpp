@@ -26,27 +26,25 @@ Graph::Graph(int V)
     adj = new list<int>[V];
 }
 
-void Graph::addEdge(int v, int w) { adj[v].push_back(w); }
+void Graph::addEdge(int v, int w)
+ { adj[v].push_back(w); 
+ }
 
 // A recursive function that finds and prints strongly
-// connected components using DFS traversal u --> The vertex
-// to be visited next disc[] --> Stores discovery times of
-// visited vertices low[] -- >> earliest visited vertex (the
-// vertex with minimum
-//			 discovery time) that can be reached from
-//			 subtree rooted with current vertex
+// connected components using DFS traversal
+// u --> The vertex to be visited next 
+//disc[] --> Stores discovery times of visited vertices
+// low[] -- >> earliest visited vertex (the vertex with minimum	 discovery time) that can be reached from subtree rooted with current vertex
 // *st -- >> To store all the connected ancestors (could be
-// part
-//		 of SCC)
+// part of SCC)
 // stackMember[] --> bit/index array for faster check
-// whether
-//				 a node is in stack
-void Graph::SCCUtil(int u, int disc[], int low[],
-                    stack<int> *st, bool stackMember[])
+// whether a node is in stack
+void Graph::SCCUtil(int u, int disc[], int low[],stack<int> *st, bool stackMember[])
 {
     // A static variable is used for simplicity, we can
     // avoid use of static variable by passing a pointer.
     static int time = 0;
+   // cout << "callled" << time << endl;
 
     // Initialize discovery time and low value
     disc[u] = low[u] = ++time;
@@ -95,6 +93,7 @@ void Graph::SCCUtil(int u, int disc[], int low[],
         stackMember[w] = false;
         st->pop();
     }
+
 }
 
 // The function to do DFS traversal. It uses SCCUtil()

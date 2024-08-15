@@ -1,3 +1,10 @@
 Tarjan algo to find strongly connnected component in directed graph
 Article: https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/ 
 Video: https://www.youtube.com/watch?v=trvJsdNCEVA
+
+Articulation point 
+Article:https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/
+
+Bridges in graph
+Article:https://www.geeksforgeeks.org/bridge-in-a-graph/
+
